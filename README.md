@@ -15,12 +15,11 @@ Starting from a noise image, gradient ascent is used to generate a class image.
 
 This is an example of an image that can be obtained by maximizing the logit corresponding to the ImageNet class green snake.
 
+target class : Green Snake
 <span style="color:green;font-weight:300;font-size:10px">
 
 <div align="center">
     <img src="images/green_snake_alexnet.png" width=150 height=150 alt="positional encoding - original transformer">
-    <figcaption>target class : Green Snake</figcaption>
-
 </div>
 </span>
 
@@ -40,13 +39,13 @@ The deep dream technique was first introduced in 2015 by Google's Alexander Mord
 
 #### Results | vgg19 - model
 
+Model : Vgg19 | Layer : 5 - 12 | Iterations 100
+
 <span style="color:white;font-weight:300;font-size:10px">
 
 <div align="center">
     <img src="images/sea_dream.png" width=320 height=300>
     <img src="images/vgg19_layer12.png" width=320 height=300>
-    <figcaption>Model : Vgg19 | Layer : 5 - 12 | Iterations 100 </figcaption>
-
 </div>
 </span>
 
@@ -63,7 +62,6 @@ The image is represented as a pyramid of images of different resolutions. Gradie
 
 <div align="">
     <img src="images/pyramid.png" width=90 height=130>
-    <figcaption> Image pyramid </figcaption>
 
 </div>
 </span>
@@ -73,13 +71,13 @@ This structured representation of an image is useful in many tasks (such as sear
 
 #### Results | vgg19 - model
 
+Model : Vgg19 | Layer : 12 | Num Octaves 3 - 8 | Iterations 20
 
 <span style="color:white;font-weight:300;font-size:10px">
 
 <div align="center">
     <img src="images/dreamed_image2_octave3.png" width=320 height=300>
     <img src="images/dreamed_image2_octave8.png" width=320 height=300>
-    <figcaption>Model : Vgg19 | Layer : 12 | Num Octaves 3 - 8 | Iterations 20 </figcaption>
 
 </div>
 </span>
@@ -103,3 +101,4 @@ PYTHONPATH=. python class_image.py --class IMAGENET_CLASS
 ```
 PYTHONPATH=. python deep_dream.py --image IMAGE_PATH --octaves NUM_OCTAVES --iterations NUM_ITERATIONS
 ```
+
